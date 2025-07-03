@@ -1,44 +1,44 @@
-# aрифметические операторы:
-# +	cложение
-# -	вычитание
-# *	умножение
-# /	деление (всегда float)
-# //	целочисленное деление	10 // 3 ->	3
-# %	остаток от деления	10 % 3 ->	1
+# arithmetic operators(aрифметические операторы):
+# +	addition
+# -	subtraction
+# *	multiplication
+# /	division(always float)
+# // integer division(целочисленное деление)	10 // 3 ->	3
+# %	modulo/remainder(остаток от деления)	10 % 3 ->	1
 # **	возведение в степень
 
-# операторы сравнения:
-# ==	равно	5 == 5	True
-# !=	не равно	5 != 4	True
-# >	больше	6 > 2	True
-# <	меньше	3 < 4	True
-# >=	больше или равно	5 >= 5	True
-# <=	меньше или равно	2 <= 3	True
+# comparison operators(операторы сравнения):
+# ==	equal	5 == 5	True
+# !=	not equal	5 != 4	True
+# >	greater than	6 > 2	True
+# <	less than	3 < 4	True
+# >=	greater than or equal	5 >= 5	True
+# <=	less than or equal	2 <= 3	True
 
-# операторы присваивания
-# =	простое присваивание
-# +=	прибавить и присвоить	x += 2	=> x=x+2
-# -=	вычесть и присвоить	x -= 1	=> x=x-1
-# *=	умножить и присвоить	x *= 3	=> x=x*3
-# /=	разделить и присвоить	x /= 2	=> x=x/2
-# //=	целочисленное деление	x //= 2	=> x=x//2
-# %=	остаток и присвоить	x %= 2	=> x=x%2
-# **=	возвести в степень и присвоить	x **= 2	=> x=x**2
+# assignment operators(операторы присваивания):
+# =	simple assignment
+# +=	add and assign	x += 2	=> x=x+2
+# -=	subtract end assign	x -= 1	=> x=x-1
+# *=	multiply and assign	x *= 3	=> x=x*3
+# /=	divide and assign	x /= 2	=> x=x/2
+# //=	integer divide and assign	x //= 2	=> x=x//2
+# %=	modulo and assign	x %= 2	=> x=x%2
+# **=	exponentiate and assign(в степень)	x **= 2	=> x=x**2
 
-# логические операторы(работают с True и False):
-# and	-логическое И True and False	-> False
-# or	-логическое ИЛИ	True or False	-> True
-# not	-логическое НЕ not True	-> False
+# logical operators(логические операторы(работают с True и False):
+# and	-logical AND -True and False	-> False
+# or	-logical OR	-True or False	-> True
+# not	-logical NOT -not True	-> False
 
-# операторы принадлежности:
-# in	-проверка вхождения	'a' in 'cat'	-> True
-# not in	-проверка отсутствия вхождения	'a' not in 'cat'	-> False
+# membership operators(операторы принадлежности):
+# in	-membership check(проверка вхождения)	-'a' in 'cat'	-> True
+# not in	-non-membership check(отсутствиe вхождения)	-'a' not in 'cat'	-> False
 
-# операторы идентичности(сравнение по объекту, не по значению):
-# is	-являются ли объекты одним и тем же	a is b ->	True/False
-# is not	-не являются одним объектом	a is not b	-> True/False
+# identity operators(операторы идентичности(сравнение по объекту, не по значению):
+# is	-object identity check(являются ли объекты одним и тем же)	a is b ->	True/False
+# is not	-object non-identity check(не являются)	a is not b	-> True/False
 
-# побитовые операторы:
+# bitwise operators(побитовые операторы):
 # они работают с двоичными представлениями чисел(битами)
 # исп. в системном програмировании, разработке драйверов и встроеных систем(embedded) криптографии
 # исп. в сжатие и обработка данных, графика и игры, сетевое программирование, алгоритмы и структуры данных
@@ -46,12 +46,12 @@
 # быстроя упаковка/распаковка информации
 # управление флагами и настройками в виде битов
 # pабота с регистрами процессора,портами ввода-вывода,памятью
-# &	-AND	=> 5 & 3	=> 0b0101 & 0b0011 = 0b0001 → 1
-# |	-OR	=> 5 | 3	=> 0b0101 | 0b0011 = 0b0111 → 7
-# ^	-XOR (еxclusive OR)	=> 5 ^ 3	0b0101 ^ 0b0011 = 0b0110 → 6
-# ~	-NOT	=> ~5	инвертирует все биты (даёт -6)
-# <<	Сдвиг влево	5 << 1	0b0101 → 0b1010 → 10   -nри сдвиге влево справа добавляются нули
-# >>	Сдвиг вправо	5 >> 1	0b0101 → 0b0010 → 2  -при сдвиге вправо слева добавляются нули
+# &	-bitwise AND	=> 5 & 3	=> 0b0101 & 0b0011 = 0b0001 → 1
+# |	-bitwise OR	=> 5 | 3	=> 0b0101 | 0b0011 = 0b0111 → 7
+# ^	-bitwise XOR (еxclusive OR)	=> 5 ^ 3	0b0101 ^ 0b0011 = 0b0110 → 6
+# ~	-bitwise NOT	=> ~5	инвертирует все биты (даёт -6)
+# <<	left bitwise shift(cдвиг влево)	5 << 1	0b0101 → 0b1010 → 10   -nри сдвиге влево справа добавляются нули
+# >>	right bitwise shift	5 >> 1	0b0101 → 0b0010 → 2  -при сдвиге вправо слева добавляются нули
 
 
 default_settings = 0b0000
